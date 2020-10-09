@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.text-principal {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+
+.text-black {
+    color: #1d1d1d !important
+}
+
+a {
+    color: #1c94d9;
+    text-decoration: none;
+}
+
+.btn-group {
+    text-align: center;
+    width: 100%;
+}
+
+.svg-wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.white-wave path {
+    fill: #fff;
+    stroke-width: 0;
+}
+
+.orange-wave {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.orange-wave path {
+    fill: #fa9f44;
+    stroke-width: 0;
+}
+
+.btn-group .btn {
+    margin: 1em;
+}
+
+.btn {
+    font-size: 1em;
+    padding: .5em 2em;
+    border-radius: .5em;
+    border: none;
+}
+
+.btn svg {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+
+.btn-principal {
+    background-color: #1c94d9;
+    color: white;
+}
+
+.btn-principal-no-bg {
+    background-color: #fff;
+    color: #1c94d9;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: .5em;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+
+label {
+    align-self: flex-start;
+    padding-left: 1em;
+}
+
