@@ -7,6 +7,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/register.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                   c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z" />
             </svg>
         </button>
-        <form action="">
+        <div class="form">
             <h1 class="text-principal">
                 Registro
             </h1>
@@ -33,8 +34,8 @@
                 <label for="vehicle1">Estoy de acuerdo con los <a href="#">términos y condiciones</a> para el uso de
                     esta app</label>
             </div>
-            <input class="btn btn-principal" type="submit" value="Registrarme">
-        </form>
+            <button class="btn btn-principal" onclick="store()">Registrarse</button>
+        </div>
         <svg viewBox="0 0 304.8 228.6" class="svg-wave orange-wave">
             <path
                 d="M -0.244685,140.94023 V 228.6 H 305.04469 c -0.27768,-9.92364 0.0436,-50.16776 -65.29163,-53.38899 -47.21281,-2.32775 -85.28427,4.51341 -166.876628,2.24482 C 3.3327499,175.52225 4.5652005,150.82769 -0.244685,140.94023 Z" />
