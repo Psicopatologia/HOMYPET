@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/aggmascota.css">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script>
+
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+</script>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HOMYPET</title>
+</head>
+<body>
+    <div class="img">
+        <div>
+        <button onclick="location.href = 'home.html';" class="btn btn-principal-no-bg" >
+            <svg x="0px" y="0px" viewBox="0 0 31.494 31.494">
+                <path style="fill:#1E201D" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+                      c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+                      c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z" />
+            </svg>
+        </button>
+        </div>
+
+
+        <div class="photo"> <img src="iconos/942166-user-interface/svg/039-photo.svg" /></div>
+    </div>
+
+
+    <div class="form">
+        <form action="">
+
+            <div class="txt"> <label for="tipo">Tipo de mascota</div></label>
+            <div>
+                <select class="select" name="tipo">
+                    <option> Perro</option>
+                    <option> Gato</option>
+            </select></div>
+            <br />
+            <div class="txt"><label for="nombre">Nombre</label></div>
+
+            <div ><input type="text" name="nombre" id="nombre"></div>
+            <div><label for="sexo">Sexo</label></div>
+            <div>
+                <select class="select" name="sexo">
+                    <option>Macho</option>
+                    <option> Hembra</option>
+                </select>
+            </div>
+            <br />
+
+            <div class="txt"><label for="fnacimiento">Fecha de nacimiento</label></div>
+            <br />
+            <div class="calendar" id="datepicker"></div>
+            <br />
+
+            <div><label for="raza"> Raza</label></div>
+            <select class="select" name="raza"></select>
+
+        </form>
+        <div class="check">
+            <button class="chulo"> <div><img src="iconos/1828675-basic-ui/svg/011-check.svg" width="60"</div></button>
+        </div>
+    </div>
+
+
+</body>
+</html>
