@@ -1,0 +1,106 @@
+header {
+    height: auto;
+}
+
+main {
+    padding: 0;
+    justify-content: start;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper svg {
+    width: 1em;
+}
+
+
+.calendar {
+    width: 90%;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 30px;
+    text-align: center;
+}
+
+.weekdays {
+    padding: .5em 0;
+    display: flex;
+}
+
+.days {
+    font-weight: 300;
+    padding: .5em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+    text-align: center;
+    width: 14.28%;
+}
+
+.days div {
+    padding: .5em 0;
+    margin-bottom: .5em;
+    border-radius: .5em;
+}
+
+.prev_date {
+    color: #999;
+}
+
+.today {
+    background-color: #FFCE7F;
+    color: #fff;
+}
+
+.days div:hover {
+    cursor: pointer;
+    box-shadow:  0 0 0 .1em #FFCE7F;
+}
+
+#month {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.arrows * {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.detalle {
+    background-color: #E8E8E8;
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:  1em 2em;
+}
+
+#fechaDetalle {
+    margin-bottom: 1em;
+}
+
+.eventosFecha {
+    background-color: #FFF;
+    width: 95%;
+    padding: 1em;
+    border-radius: 1em 1em 0 0;
+    display: flex;
+    justify-content: center;
+}

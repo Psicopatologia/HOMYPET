@@ -6,7 +6,17 @@ var terms = document.getElementById('terms');
 
 // storing input from register-form
 function store() {
-    alert("oh no")
-    // localStorage.setItem('name', name.value);
-    // localStorage.setItem('pw', pw.value);
+    if (email.value===""||confEmail.value===""||pass.value==="") {
+        alert("Por favor llene todos los campos");
+        return;
+    } else if (!terms.checked) {
+        alert("Debe aceptar términos y condiciones");
+        return;
+    } else if (email.value!==confEmail.value) {
+        alert("Los correos deben ser iguales");
+        return;
+    }
+    localStorage.setItem('email', email.value);
+    localStorage.setItem('pass', pass.value);
+    window.location.assign('signupsucc.html');
 }

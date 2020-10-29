@@ -12,7 +12,7 @@ main > button {
     align-self: flex-start;
 }
 
-form {
+.form {
     margin-top: 1em;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@ form {
     width: 70%;
 }
 
-form h1 {
+.form h1 {
     margin-bottom: 2em;
 }
 
@@ -28,12 +28,12 @@ form h1 {
     margin: 1em 0;
 }
 
-form .btn {
+.form .btn {
     margin-top: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-form a {
+.form a {
     margin-top: 2em;
 }

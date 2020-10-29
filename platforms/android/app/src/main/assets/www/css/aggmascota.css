@@ -1,0 +1,70 @@
+﻿.img {
+    background-color: #E1E1E1;
+    width: 95%;
+
+    margin: 2em 2.5%;
+    padding: .5em 1em;
+    border-radius: 1em;
+    display: flex;
+}
+
+.photo{
+    width:70px;
+    margin-top: 60px;
+    margin-left: 40%;
+    
+}
+.check {
+    float: right;
+    text-align:right;
+    margin-top: 10px;
+    margin-right:40px;
+    
+}
+
+.chulo {
+    width: 100px;
+    border-radius: 20px;
+    background-color: #E1E1E1
+}
+
+.form {
+    
+    color: black;
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 80px;
+    margin-left:100px
+}
+
+
+.calendar{
+  text-align:center
+}
+
+.select {
+  
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 10px;
+    text-align:center;
+    margin-top:30px;
+    width:70%;
+ 
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: .5em;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    text-align:center;
+    margin-top:20px;
+}
+
+label {
+    align-self: flex-start;
+    padding-left: 1em;
+    margin-top:10px
+}

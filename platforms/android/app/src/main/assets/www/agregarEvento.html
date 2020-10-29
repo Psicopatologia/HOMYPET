@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Ingreso</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/register.js" defer></script>
+    <script src="cordova.js"></script>
+    <script src="js/agregarEvento.js" defer></script>
 </head>
 
 <body>
     <main>
-        <button onclick="location.href = 'index.html';"  class="btn btn-principal-no-bg">
+        <button onclick="location.href = 'agenda.html';"  class="btn btn-principal-no-bg">
             <svg x="0px" y="0px" viewBox="0 0 31.494 31.494">
                 <path style="fill:#1E201D" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
                   c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
@@ -20,21 +21,17 @@
             </svg>
         </button>
         <div class="form">
-            <h1 class="text-principal">
-                Registro
-            </h1>
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email">
-            <label for="confEmail">Confirmar correo electrónico</label>
-            <input type="email" name="confEmail" id="confEmail">
-            <label for="pass">Contraseña</label>
-            <input type="password" name="pass" id="pass">
-            <div class="checks">
-                <input type="checkbox" id="terms" name="terms" value="accept">
-                <label for="vehicle1">Estoy de acuerdo con los <a href="#">términos y condiciones</a> para el uso de
-                    esta app</label>
-            </div>
-            <button class="btn btn-principal" onclick="store()">Registrarse</button>
+            <label for="text">Nombre</label>
+            <input type="text" name="text" id="text">
+            <label for="desc">Descripción</label>
+            <textarea name="desc" id="desc"></textarea>
+            <label for="ini">Tiempo de inicio</label>
+            <input type="time" name="ini" id="ini">
+            <label for="ini">Tiempo final</label>
+            <input type="time" name="fin" id="fin">
+            <label for="text">Ubicación</label>
+            <input type="text" name="ubi" id="ubi">
+            <button class="btn btn-principal" onclick="agregar()">Guardar</button>
         </div>
         <svg viewBox="0 0 304.8 228.6" class="svg-wave orange-wave">
             <path

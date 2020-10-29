@@ -46,6 +46,7 @@ a {
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 .orange-wave path {
@@ -92,12 +93,13 @@ a {
     margin: 0;
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"],textarea,input[type="time"] {
     width: 100%;
     padding: .5em;
     border-radius: .5em;
     margin-bottom: 1.5em;
     font-size: 1em;
+    background-color: #fff;
 }
 
 label {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMYPET</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <script src="js/agenda.js" defer></script>
+</head>
+
+<body onload="renderDate()">
+    <header>
+        <img src="img/pp.png" alt="Foto perfil">
+        <h1 class="text-principal"><span>Hola</span> <br> Carolina!</h1>
+
+        <nav>
+            <a href="home.html" class="nav-item">Inicio</a>
+            <a href="#" class="nav-item active">Agenda</a>
+            <a href="#" class="nav-item">Información</a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="month">
+                <div>
+                    <p class="text-principal" id="date_str"></p>
+                </div>
+                <div class="arrows">
+                    <div class="prev" onclick="moveDate('prev')">
+                        <svg viewBox="0 0 54.070068 31.534845">
+                            <path d="M 4.5454506,4.5454514 27.035035,27.035031 49.524618,4.5454514 v 0"
+                                style="fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4" />
+                        </svg>
+                    </div>
+                    <div class="next" onclick="moveDate('next')">
+                        <svg viewBox="0 0 54.070068 31.534845">
+                            <path d="M 4.5454506,26.989392 27.035035,4.4998119 49.524618,26.989392 v 0"
+                                style="fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                    <div class="weekdays">
+                        <div>DO</div>
+                        <div>LU</div>
+                        <div>MA</div>
+                        <div>MI</div>
+                        <div>JU</div>
+                        <div>VI</div>
+                        <div>SA</div>
+                    </div>
+                    <div class="days">
+
+                    </div>
+
+            </div>
+        </div>
+        <div class="detalle">
+            <hr>
+            <p id="fechaDetalle"></p>
+            <div class="eventosFecha">
+                <button onclick="location.href='agregarEvento.html'" class="btn btn-principal">Añadir eventos</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
